@@ -1,23 +1,20 @@
-## Introduction
+#Playwright BDD Scenario Examples using Javascript
 
-<p align="center">
-  This repository provides code example of integrating Playwright JS with Cucumber JS
-</p>
+This Project contains examples of using Playwright as browser automation tool and tests written in BDD format.
 
-## Installing
+Since there are limitations using Cucumber-js with playwright(playwright doesn't consider the configuration management while launching it from Cucumber-js runner) we are using [Playwright-bdd](https://github.com/vitalets/playwright-bdd#readme) runner for achieving BDD style tests scripting and execution.
 
-**_Clone this repository_**
+## Scenario Execution
 
-**_From root of the repository execute below command to install all the dependencies_**
+Once we clone the project, install the depenencies by executing below command
 
-```bash
+```
 npm install
 ```
 
-## Running Cucumber scenario
+After installation run the tests by executing below command
 
-**_To run the scenario execute below command_**
-
-```bash
-npx cucumber-js
 ```
+npx bddgen && npx playwright test
+```
+
